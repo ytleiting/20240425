@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>修平科技大學-反毒闖關活動</title>
+    <link rel="shortcut icon" href="../favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+    <link href="../css/templatemo-festava-live.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <style>
+        .navbar-logo {
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px;
+            z-index: 1000;
+            border-radius: 5px;
+            /* 圓角 */
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <nav class="navbar-logo">
+            <img src="../logo.png">
+        </nav>
+        <section class="hero-section">
+            <div class="section-overlay"></div>
+            <div class="container d-flex justify-content-center align-items-center">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title" id="question">載入答案中</h5>
+                                <form>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="answer" id="answer1">
+                                        <label class="form-check-label" for="answer1">
+                                            答案一
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="answer" id="answer2">
+                                        <label class="form-check-label" for="answer2">
+                                            答案二
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="answer" id="answer3">
+                                        <label class="form-check-label" for="answer3">
+                                            答案三
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="answer" id="answer4">
+                                        <label class="form-check-label" for="answer4">
+                                            答案四
+                                        </label>
+                                    </div>
+                                    <div class="row align-items-center">
+                                        <div class="col align-items-center">
+                                            <p id="counter">答對: 0; 答錯: 0;</p>
+                                        </div>
+                                        <div class="col align-items-center">
+                                            <button onclick="Question.next()" type="button"
+                                                class="btn btn-primary">下一題</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-wrap">
+                <video autoplay="" loop="" muted="" class="custom-video" poster="">
+                    <source src="../video/Addiction And The Cycle Addiction.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <!-- JAVASCRIPT FILES -->
+        <script>
+            let currentDate = new Date();
+            let options = { year: 'numeric', month: 'long', day: 'numeric' };
+            let formattedDate = new Intl.DateTimeFormat('en-US', options).format(currentDate);
+            document.getElementById('date').innerHTML = formattedDate;
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
+
+</body>
+
+</html>

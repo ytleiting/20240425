@@ -1,0 +1,103 @@
+.card {
+    background-image: url("./img/blackboard.jpg");
+    background-size: cover;
+    position: relative;
+    padding-top: 133.33%;
+}
+
+.card-body {
+    padding: 20% 10%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    margin: 0;
+}
+
+.card-body form {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    gap: 10%
+}
+
+.card-title {
+    color: white;
+}
+
+.form-check-label {
+    color: white;
+}
+
+#counter {
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+button {
+    width: 100%;
+}
+
+
+
+.card-title {
+    font-size: 2.3rem;
+}
+
+.form-check-label {
+    font-size: 1.5rem;
+}
+
+#counter {
+    font-size: 1.5rem;
+}
+
+button {
+    font-size: 1.5rem !important;
+}
+
+.card {
+    width: 588px;
+}
+
+@media (max-width: 991px) {
+
+    .card-body form {
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+        gap: 5%
+    }
+
+    input[type="radio"] {
+        width: 10px;
+        height: 10px;
+    }
+
+    .card-title {
+        font-size: 7vw;
+    }
+
+    .form-check-label {
+        font-size: 5vw;
+    }
+
+    #counter {
+        font-size: 4vw;
+    }
+
+    button {
+        font-size: 5vw !important;
+    }
+
+    .card {
+        width: 90vw;
+    }
+}
